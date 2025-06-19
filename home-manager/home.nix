@@ -3,7 +3,7 @@
 {
   imports = [
     ./zsh.nix
-    ./modules/nixvim.nix
+    ./modules/nixvim/nixvim.nix
   ];
 
   home.username = "f1rtxz";
