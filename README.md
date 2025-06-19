@@ -10,8 +10,8 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 
 ## How to Use
 
-1.  **Enter the home directory** `cd`
-2.  **Clone:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nixos-config`
+1.  **Enter the home directory:** `cd`
+2.  **Clone the repository:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nixos-config`
 3.  **Apply:**
   
 ```bash
