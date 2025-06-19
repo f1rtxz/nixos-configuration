@@ -1,8 +1,12 @@
 { config, pkgs, ... }:
 {
+
+  imports = [
+    ./zsh.nix
+  ];
+
   home.username = "f1rtxz";
   home.homeDirectory = "/home/f1rtxz";
-
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 
