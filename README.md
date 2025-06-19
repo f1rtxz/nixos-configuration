@@ -19,4 +19,3 @@ cd ~/nixos-config
 sudo nixos-rebuild switch --flake ~/nixos-config
 home-manager switch --flake ~/nixos-config
 ```
-
