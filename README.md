@@ -12,6 +12,7 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 
 1.  **Clone:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nixos-config`
 2.  **Apply:**
+  
     ```bash
     cd ~/nixos-config
     sudo nixos-rebuild switch --flake ~/nixos-configuration
