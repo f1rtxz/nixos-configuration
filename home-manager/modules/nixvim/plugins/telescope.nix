@@ -7,8 +7,6 @@
       "<leader>fg" = "live_grep";
     };
 
-    keymapsSilent = true;
-
     settings.defaults = {
       file_ignore_patterns = [
         "^.git/"
