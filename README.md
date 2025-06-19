@@ -11,10 +11,9 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 ## How to Use
 
 1.  **Clone:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nixos-config`
-2.  **Adjust `flake.nix`:** Ensure hostname (`nixos`) and username (`f1rtxz`) match your system.
-3.  **Apply:**
+2.  **Apply:**
     ```bash
     cd ~/nixos-config
-    sudo nixos-rebuild switch --flake .#nixos
-    home-manager switch --flake .#f1rtxz
+    sudo nixos-rebuild switch --flake ~/nixos-configuration
+    home-manager switch --flake ~/nixos-configuration
     ```
