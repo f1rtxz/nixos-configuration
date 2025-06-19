@@ -5,8 +5,8 @@ My personal NixOS and Home Manager configurations, managed with Nix flakes.
 ## Overview
 
 This repository uses Nix flakes to declaratively and reproducibly manage:
-- My NixOS system settings.
-- My user-specific configurations via Home Manager.
+- NixOS system settings.
+- User-specific configurations via Home Manager.
 
 ## How to Use
 
