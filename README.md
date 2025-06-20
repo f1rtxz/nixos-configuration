@@ -11,11 +11,12 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 ## How to Use
 
 1.  **Enter the home directory:** `cd`
-2.  **Clone the repository:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nixos-config`
+2.  **Clone the repository:** `git clone https://github.com/f1rtxz/nixos-configuration.git ~/nix`
 3.  **Apply:**
   
 ```bash
 cd ~/nixos-config
-sudo nixos-rebuild switch --flake ~/nixos-config
-home-manager switch --flake ~/nixos-config
+sudo nixos-rebuild switch --flake ~/nix
+export NIXPKGS_ALLOW_UNFREE=1
+home-manager switch --impure --flake ~/nix
 ```
