@@ -16,5 +16,7 @@
     openrazer-daemon
     git
     gcc
+    python3
+    direnv
   ];
 }
