@@ -1,5 +1,5 @@
 {
-  plugins.conform-nvim = {
+  plugins.conform = {
     enable = true;
     formatOnSave = {
       enabled = true;
