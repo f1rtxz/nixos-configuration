@@ -6,6 +6,8 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
 
+  services.flatpak.enable = true;
+
   environment.systemPackages = with pkgs; [
     neovim
     wget
@@ -18,5 +20,6 @@
     gcc
     python3
     direnv
+    flatpak
   ];
 }
