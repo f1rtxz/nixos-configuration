@@ -8,7 +8,7 @@
       ./modules/bundle.nix
     ];
 
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
