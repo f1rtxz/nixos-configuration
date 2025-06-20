@@ -38,7 +38,11 @@
       }
       {
         action = ":MoltenEvaluateOperator<CR>";
-        ket = "<leader>e";
+        key = "<leader>e";
+        options = {
+          silent = true;
+          noremap = true;
+        };
       }
     ];
   };
