@@ -1,5 +1,5 @@
 {
-  plugins.conform = {
+  programs.nixvim.plugins.conform = {
     enable = true;
     formatOnSave = {
       enabled = true;
