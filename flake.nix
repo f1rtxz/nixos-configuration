@@ -18,18 +18,20 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
     system = "x86_64-linux";
+    hostname = "nixos";
+    user = "f1rtxz";
   in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit system; };
       modules = [
         ./nixos/configuration.nix
       ];
     };
-    homeConfigurations.f1rtxz = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [
         ./home-manager/home.nix
-	inputs.nixvim.homeManagerModules.nixvim
+	      inputs.nixvim.homeManagerModules.nixvim
       ];
     };
   };
