@@ -13,6 +13,7 @@
           lspBuf = {
             gd = "definition";
             K = "hover";
+            "<leader>ca" = "code_action";
           };
         };
       };

@@ -6,5 +6,6 @@
     ./neotree.nix
     ./telescope.nix
     ./tree-sitter.nix
+    ./conform.nix
   ];
 }

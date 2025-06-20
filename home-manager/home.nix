@@ -20,6 +20,10 @@
     ripgrep
     fastfetch
     htop
+    stylua
+    prettier
+    black
+    nixpkgs-fmt
   ];
 }
 
