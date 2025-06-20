@@ -1,20 +1,22 @@
 {
-  programs.nixvim.plugins.conform = {
+  programs.nixvim.plugins.conform-nvim = {
     enable = true;
-    formatOnSave = {
-      enabled = true;
-      timeoutMs = 1000;
-      lspFallback = true;
-    };
-    formattersByFt = {
-      lua = [ "stylua" ];
-      javascript = [ "prettier" ];
-      typescript = [ "prettier" ];
-      json = [ "prettier" ];
-      html = [ "prettier" ];
-      css = [ "prettier" ];
-      nix = [ "nixpkgs-fmt" ];
-      python = [ "black" ];
-    };
+    settings = {
+      format_on_save = {
+        enabled = true;
+        timeoutMs = 1000;
+        lspFallback = true;
+      };
+      formatters_by_ft = {
+        lua = [ "stylua" ];
+        javascript = [ "prettier" ];
+        typescript = [ "prettier" ];
+        json = [ "prettier" ];
+        html = [ "prettier" ];
+        css = [ "prettier" ];
+        nix = [ "nixpkgs-fmt" ];
+        python = [ "black" ];
+      };
+    };      
   };
 }
