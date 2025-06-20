@@ -48,6 +48,7 @@
           if pcall(require, "molten") then
             require("molten").setup({
               output_virt_lines = true,
+              molten_virt_text_output = true;
             })
           end
         end,
