@@ -7,6 +7,5 @@
     ./telescope.nix
     ./tree-sitter.nix
     ./conform.nix
-    ./alpha.nix
   ];
 }
