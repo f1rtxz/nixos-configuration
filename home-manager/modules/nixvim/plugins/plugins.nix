@@ -8,5 +8,6 @@
     ./tree-sitter.nix
     ./conform.nix
     ./completions.nix
+    ./windsurf.nix
   ];
 }
