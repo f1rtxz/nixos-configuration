@@ -25,7 +25,7 @@
     };
     shellAliases = 
     let
-      flakeDir = "~/nixos-config"; 
+      flakeDir = "~/nix"; 
     in {
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
       upd = "cd ${flakeDir} && nix flake update && sudo nixos-rebuild switch --flake ${flakeDir}";
