@@ -19,3 +19,12 @@ sudo nixos-rebuild switch --flake ~/nix
 export NIXPKGS_ALLOW_UNFREE=1
 home-manager switch --impure --flake ~/nix
 ```
+
+## Shell Aliases
+
+- `nrs` - `sudo nixos-rebuild switch --flake ~/nix`
+- `hms` - `export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch --impure --flake ~/nix`
+- `upd` - `cd ~/nix && nix flake update && sudo nixos-rebuild switch --flake ~/nix`
+
+- `ff` - `fastfetch`
+- `v` - `nvim`
