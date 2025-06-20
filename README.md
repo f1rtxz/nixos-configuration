@@ -15,7 +15,6 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 3.  **Apply:**
   
 ```bash
-cd ~/nixos-config
 sudo nixos-rebuild switch --flake ~/nix
 export NIXPKGS_ALLOW_UNFREE=1
 home-manager switch --impure --flake ~/nix
