@@ -2,11 +2,14 @@
   programs.nixvim = {
     plugins = {
       molten = {
+        enable = true;
         settings = {
+          output_virt_lines = true;
+          virt_text_output = true;
+          virt_lines_off_by_1 = true;
           image_provider = "image.nvim";
           ft = [ "python" "norg" "markdown" "quarto" ];
         };
-        enable = true;
       };
       image = {
         settings = {
@@ -42,15 +45,10 @@
       otter.enable = true;
     };
     extraConfigLua = ''
-      vim.api.nvim_create_autocmd("VimEnter", {
-        group = vim.api.nvim_create_augroup("MoltenCustomConfig", { clear = true }),
+      vim.api.nvim_create_autocmd("User", {
+        pattern = "MoltenEvaluatePost",
         callback = function()
-          if pcall(require, "molten") then
-            require("molten").setup({
-              output_virt_lines = true,
-              molten_virt_text_output = true;
-            })
-          end
+          require("molten.output").toggle_virt_text()
         end,
       })
     '';
