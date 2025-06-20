@@ -7,7 +7,9 @@
 
     opts = {
       relativenumber = true;
-      number = true;
+
+      foldmethod = "manual";
+      foldenable = true;
 
       tabstop = 2;
       shiftwidth = 2;
