@@ -21,5 +21,6 @@
     python3
     direnv
     flatpak
+    protonup-qt
   ];
 }
