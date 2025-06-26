@@ -5,6 +5,7 @@
   programs.steam.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
+  programs.kdeconnect.enable = true;
 
   services.flatpak.enable = true;
 
@@ -22,5 +23,10 @@
     direnv
     flatpak
     protonup-qt
+    gnome-extension-manager
+    gnome-tweaks
+    telegram-desktop
+    viber
+    discord
   ];
 }
