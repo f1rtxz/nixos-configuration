@@ -47,5 +47,4 @@ home-manager switch --impure --flake ~/nix
 ## Ko-fi ;D
 
 https://ko-fi.com/f1rtxz
-
-**Thank you a lot!**
+ **Thank you a lot!**
