@@ -44,6 +44,10 @@ home-manager switch --impure --flake ~/nix
 - `ff` - `fastfetch`
 - `v` - `nvim`
 
+## License
+
+MIT
+
 ## Ko-fi ;D
 
 https://ko-fi.com/f1rtxz
