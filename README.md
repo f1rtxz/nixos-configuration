@@ -10,7 +10,7 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 
 ## How to Use
 
-1.  **Install NixOS:** `If you haven't already installed NixOS, follow the [NixOS Installation Guide](https://nixos.org/download/) for detailed instructions.`
+1.  **Install NixOS:** `If you haven't already installed NixOS, follow the `[NixOS Installation Guide](https://nixos.org/download/)` for detailed instructions.`
 2.  **Enter the home directory:** `cd`
 3.  **Clone the repository:**
 
