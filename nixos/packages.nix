@@ -12,7 +12,6 @@
   environment.systemPackages = with pkgs; [
     neovim
     wget
-    ghostty
     home-manager
     polychromatic
     heroic
@@ -21,12 +20,14 @@
     gcc
     python3
     direnv
-    flatpak
     protonup-qt
     gnome-extension-manager
     gnome-tweaks
     telegram-desktop
     viber
     discord
+    obs-studio
+    github-desktop
+    kitty
   ];
 }
