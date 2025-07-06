@@ -1,4 +1,4 @@
-# Nixos Configuration
+# ❄️ Nixos Configuration
 
 My personal NixOS and Home Manager configurations, managed with Nix flakes.
 
