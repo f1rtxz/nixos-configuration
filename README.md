@@ -10,12 +10,13 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 
 ## How to Use
 
-1.  **Install NixOS:** `If you haven't already installed NixOS, follow the `[NixOS Installation Guide](https://nixos.org/download/)` for detailed instructions.`
+1.  **Install NixOS:** `To get started, follow the` [NixOS Installation Manual](https://nixos.org/manual/nixos/stable/#ch-installation) `for step-by-step instructions`.
 2.  **Enter the home directory:** `cd`
 3.  **Clone the repository:**
 
 ```bash
-git clone https://github.com/f1rtxz/nixos-configuration.git ~/nix
+git clone https://github.com/f1rtxz/nixos-configuration.git
+mv nixos-configuration nix
 cd ~/nix
 ```
 
@@ -26,7 +27,7 @@ rm hardware-configuration.nix
 cp /etc/nixos/hardware-configuration.nix ./
 ```
 
-5. **Edit the `flake.nix` file**
+5. **Edit the configuration files**
 6.  **Finally, rebuild your system:**
   
 ```bash
