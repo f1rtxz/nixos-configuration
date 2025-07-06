@@ -6,6 +6,7 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
   programs.kdeconnect.enable = true;
+  programs.direnv.enable = true;
 
   services.flatpak.enable = true;
 
@@ -19,7 +20,6 @@
     git
     gcc
     python3
-    direnv
     protonup-qt
     gnome-extension-manager
     gnome-tweaks
