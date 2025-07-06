@@ -4,7 +4,7 @@
   imports = [
     ./zsh.nix
     ./modules/nixvim/nixvim.nix
-    ./modules/kitty/kitty.nix
+    ./modules/kitty/
   ];
 
   home.username = "f1rtxz";
