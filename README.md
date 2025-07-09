@@ -23,8 +23,8 @@ cd ~/nix
 4. **Remove the hardware-configuration.nix and add your own:**
 
 ```bash
-rm hardware-configuration.nix
-cp /etc/nixos/hardware-configuration.nix ./
+rm ./nixos/hardware-configuration.nix
+cp /etc/nixos/hardware-configuration.nix ./nixos/
 ```
 
 5. **Edit the configuration files**
