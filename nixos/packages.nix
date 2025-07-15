@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
 
   programs.firefox.enable = true;
@@ -21,6 +21,7 @@
     gcc
     python3
     protonup-qt
+    bottles
     gnome-extension-manager
     gnome-tweaks
     telegram-desktop
@@ -29,5 +30,11 @@
     obs-studio
     github-desktop
     kitty
+    cmake
+    meson
+    ninja
+    sdl3
+    inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
+    pavucontrol
   ];
 }
