@@ -3,6 +3,7 @@
   services.xserver.videoDrivers = [ "nvidia" ];
   services.xserver.xkb = {
     layout = "us, ua, ru";
-    variant = "";
+    variant = "workman, ";
+    options = "grp:win_space_toggle";
   };
 }

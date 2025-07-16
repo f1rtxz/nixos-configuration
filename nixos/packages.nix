@@ -5,8 +5,11 @@
   programs.steam.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
-  programs.kdeconnect.enable = true;
   programs.direnv.enable = true;
+
+  # programs.kdeconnect = {
+  #   enable = true;
+  # };
 
   services.flatpak.enable = true;
 
