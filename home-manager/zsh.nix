@@ -29,10 +29,9 @@
     in {
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
       hms = "export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch --impure --flake ${flakeDir}";
-
       nrb = "sudo nixos-rebuild boot --flake ${flakeDir}";
-      hmb = "export NIXPKGS_ALLOW_UNFREE=1 && home-manager boot --impure --flake ${flakeDir}";
-      upd = "cd ${flakeDir} && nix flake update && sudo nixos-rebuild boot --flake ${flakeDir} && export NIXPKGS_ALLOW_UNFREE=1 && home-manager boot --impure --flake ${flakeDir}";
+
+      upd = "cd ${flakeDir} && nix flake update && sudo nixos-rebuild switch --flake ${flakeDir} && export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch --impure --flake ${flakeDir}";
 
       ff = "fastfetch";
       n = "nvim";
