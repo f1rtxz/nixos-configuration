@@ -10,7 +10,7 @@
 
   home.username = "f1rtxz";
   home.homeDirectory = "/home/f1rtxz";
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   programs.home-manager.enable = true;
 
   programs.direnv = {
