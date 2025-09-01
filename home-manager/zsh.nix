@@ -21,6 +21,7 @@
       enable = true;
       plugins = [
 	      "git"
+        "web-search"
       ];
     };
     shellAliases = 
@@ -30,6 +31,7 @@
       nrs = "sudo nixos-rebuild switch --flake ${flakeDir}";
       hms = "export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch --impure --flake ${flakeDir}";
       nrb = "sudo nixos-rebuild boot --flake ${flakeDir}";
+      ncg = "sudo nix-collect-garbage -d";
 
       upd = "cd ${flakeDir} && nix flake update && sudo nixos-rebuild switch --flake ${flakeDir} && export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch --impure --flake ${flakeDir}";
 

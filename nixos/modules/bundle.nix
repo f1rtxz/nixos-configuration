@@ -8,5 +8,6 @@
     ./bootloader.nix
     ./openrazer.nix
     ./nvidia.nix
+    ./garbage-collector.nix
   ];
 }

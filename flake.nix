@@ -26,17 +26,19 @@
     hostname = "nixos";
     user = "f1rtxz";
   in {
+
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit system; inherit inputs; };
       modules = [
         ./nixos/configuration.nix
       ];
     };
+
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [
         ./home-manager/home.nix
-	      inputs.nixvim.homeManagerModules.nixvim
+	      inputs.nixvim.homeModules.nixvim
       ];
     };
   };

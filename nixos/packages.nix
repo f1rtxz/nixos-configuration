@@ -6,10 +6,7 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
   programs.direnv.enable = true;
-
-  # programs.kdeconnect = {
-  #   enable = true;
-  # };
+  programs.kdeconnect.enable = true;
 
   services.flatpak.enable = true;
 
@@ -25,7 +22,6 @@
     python3
     protonup-qt
     bottles
-    gnome-extension-manager
     gnome-tweaks
     telegram-desktop
     viber
@@ -39,5 +35,15 @@
     sdl3
     inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
     pavucontrol
+    zoom-us
+    mesa-demos
+    gfn-electron
+    mangohud
+    davinci-resolve
+    ffmpeg
+    vlc
+    kdePackages.kdenlive
+    libreoffice-qt6-fresh
+    cool-retro-term
   ];
 }
