@@ -15,7 +15,7 @@ This repository uses Nix flakes to declaratively and reproducibly manage:
 3.  **Clone the repository:**
 
 ```bash
-git clone https://github.com/f1rtxz/nixos-configuration.git
+git clone https://github.com/haidaianton/nixos-configuration.git
 mv nixos-configuration nix
 cd ~/nix
 ```
@@ -49,5 +49,5 @@ home-manager switch --impure --flake ~/nix
 
 ## Ko-fi ;D
 
-https://ko-fi.com/f1rtxz
+https://ko-fi.com/haidaianton
  **Thank you a lot!**

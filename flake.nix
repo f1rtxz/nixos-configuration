@@ -14,6 +14,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ayugram-desktop = {
+      type = "git";
+      submodules = true;
+      url = "https://github.com/ndfined-crp/ayugram-desktop/";
+    };
+
     kwin-effects-forceblur = {
       url = "github:taj-ny/kwin-effects-forceblur";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,7 +30,7 @@
   let
     system = "x86_64-linux";
     hostname = "nixos";
-    user = "f1rtxz";
+    user = "haidai";
   in {
 
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {

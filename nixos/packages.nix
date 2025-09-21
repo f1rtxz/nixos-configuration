@@ -6,7 +6,7 @@
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
   programs.direnv.enable = true;
-  programs.kdeconnect.enable = true;
+  # programs.kdeconnect.enable = true;
 
   services.flatpak.enable = true;
 
@@ -45,5 +45,6 @@
     kdePackages.kdenlive
     libreoffice-qt6-fresh
     cool-retro-term
+    inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
   ];
 }

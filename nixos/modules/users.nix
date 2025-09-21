@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-    users.users.f1rtxz = {
+    users.users.haidai = {
     isNormalUser = true;
     description = "Anton Haidai";
     extraGroups = [ "networkmanager" "wheel" "plugdev" "openrazer" "input" "audio" ];

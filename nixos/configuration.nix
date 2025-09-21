@@ -15,12 +15,12 @@
   time.timeZone = "Europe/Kyiv";
   
   # PLASMA ENVIRONMENT
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  # services.displayManager.sddm.enable = true;
+  # services.desktopManager.plasma6.enable = true;
 
   # GNOME ENVIRONMENT
-  # services.displayManager.gdm.enable = true;
-  # services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   # COSMIC ENVIRONMENT
   # services.displayManager.cosmic-greeter.enable = true;
